@@ -1,0 +1,77 @@
+version: '1.0'
+
+services:
+  # DEVELOPMENT CONTAINER
+  dev:
+    container_name: boxful_api_dev
+    image: boxful-api-dev:1.0.0
+    build:
+      context: .
+      target: development
+      dockerfile: ./Dockerfile
+    command: npm run start:dev
+    ports:
+      - "${OUTER_PORT}:${APP_PORT}"
+    environment:
+      - DB_HOST=${DB_HOST}
+      - DB_USERNAME=${DB_USERNAME}
+      - DB_PASSWORD=${DB_PASSWORD}
+      - DB_DATABASE=${DB_DATABASE}
+    networks:
+      - boxful-network
+    depends_on:
+      - mongodb
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules
+    restart: unless-stopped
+
+# DATABASE CONTAINER
+  mongodb:
+    image : mongo:latest
+    container_name: boxful_db
+    volumes:
+      - mongodb_volume:/data/db
+    ports:
+      - "${DB_PORT}:${DB_PORT}"
+    environment:
+      - MONGO_USERNAME=${DB_USERNAME}
+      - MONGO_PASSWORD=${DB_PASSWORD}
+      - MONGO_DATABASE=${DB_DATABASE}
+    networks:
+      - boxful-network
+    restart: always
+
+  # PRODUCTION CONTAINER
+  prod:
+    container_name: boxful_api_prod
+    image: boxful-api-prod:1.0.0
+    build:
+      context: .
+      target: production
+      dockerfile: ./Dockerfile
+    command: npm run start:prod
+    ports:
+      - "${OUTER_PORT}:${APP_PORT}"
+    environment:
+      - DB_HOST=${DB_HOST}
+      - DB_USERNAME=${DB_USERNAME}
+      - DB_PASSWORD=${DB_PASSWORD}
+      - DB_DATABASE=${DB_DATABASE}
+    networks:
+      - boxful-network
+    depends_on:
+      - mongodb
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules
+    restart: unless-stopped
+
+# NETWORKS
+networks:
+    boxful-network:
+      driver: bridge
+
+# VOLUMES
+volumes:
+  mongodb_volume:
