@@ -10,7 +10,7 @@ export class OrdersService {
   constructor(
     private readonly stateService: StatesService,
     private readonly orderRepository: OrderRepository,
-  ) { }
+  ) {}
   async create(createOrderDto: CreateOrderDto): Promise<string> {
     const { state, city } = createOrderDto;
     const existingState = await this.stateService.findOneByName(state);
