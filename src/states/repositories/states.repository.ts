@@ -1,7 +1,7 @@
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
 
-import { State } from '@States/entities';
+import { State } from '@States/schemas';
 
 export class StateRepository {
   constructor(@InjectModel(State.name) private stateModel: Model<State>) {}
