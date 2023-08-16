@@ -9,7 +9,7 @@ import { Order } from '../schemas';
 @ApiTags('Orders')
 @Controller('orders')
 export class OrdersController {
-  constructor(private readonly ordersService: OrdersService) { }
+  constructor(private readonly ordersService: OrdersService) {}
 
   @ApiOperation({
     description: 'Use it to create a new order',
