@@ -10,7 +10,6 @@ async function bootstrap() {
     .setTitle('Boxful API')
     .setDescription('Technical assessment')
     .setVersion('1.0')
-    .addTag('assessment')
     .build();
   const swaggerDocument = SwaggerModule.createDocument(app, swaggerConfig);
   SwaggerModule.setup('docs', app, swaggerDocument);
