@@ -35,7 +35,7 @@ export class OrdersService {
       );
     }
     const savedOrder = await this.orderRepository.save(createOrderDto);
-
+    console.log(savedOrder);
     return `The order for ${savedOrder.names} ${savedOrder.lastnames} was successfully saved`;
   }
 }
