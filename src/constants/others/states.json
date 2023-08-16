@@ -157,7 +157,9 @@
       { "name": "Tapalhuaca" },
       { "name": "Zacatecoluca" }
     ],
-    "collectionAddresses":[]
+    "collectionAddresses":[
+      {"address": "Centro comercial San Antonio, Zacatecoluca, La Paz"}
+    ]
   },
   {
     "name": "La Unión",
@@ -181,7 +183,10 @@
       { "name": "Yayantique" },
       { "name": "Yucuaiquín" }
     ],
-    "collectionAddresses":[]
+    "collectionAddresses":[
+      {"address": "Ferro Oriente, Carretera Panamericana entrada La Union, La Unión"},
+      {"address": "Super Tienda Polorós, R57J+44V, C. a Monteca, Polorós"}
+    ]
   },
   {
     "name": "Morazán",
@@ -213,7 +218,10 @@
       { "name": "Yamabal" },
       { "name": "Yoloaiquín" }
     ],
-    "collectionAddresses":[]
+    "collectionAddresses":[
+      {"address": "Pereira Computer Services, Av. Fco. Rivera # 15, Osicala"},
+      {"address": "Ferreterías Chavez Hermanos, Av. Morazan, San Francisco Gotera"}
+    ]
   },
   {
     "name": "San Miguel",
@@ -239,7 +247,9 @@
       { "name": "Sesori" },
       { "name": "Uluazapa" }
     ],
-    "collectionAddresses":[]
+    "collectionAddresses":[
+      {"address": "Colonia Las Magnolias Calle Ruta Militar #1, San Miguel, San Miguel"}
+    ]
   },
   {
     "name": "San Salvador",
@@ -288,7 +298,9 @@
       { "name": "Tepetitán" },
       { "name": "Verapaz" }
     ],
-    "collectionAddresses":[]
+    "collectionAddresses":[
+      {"address": "El Punto del Repuesto, Avenida Jose Napoleon Rodriguez 13, San Vicente"}
+    ]
   },
   {
     "name": "Santa Ana",
@@ -307,7 +319,10 @@
       { "name": "Santiago de la Frontera" },
       { "name": "Texistepeque" }
     ],
-    "collectionAddresses":[]
+    "collectionAddresses":[
+      {"address": "Metrocentro Santa Ana, Avenida Independencia Sur, Santa Ana"},
+      {"address": "Cine Novedades, Calle Libertad Oriente, Santa Ana"}
+    ]
   },
   {
     "name": "Sonsonate",
@@ -329,7 +344,9 @@
       { "name": "Santo Domingo de Guzmán" },
       { "name": "Sonzacate" }
     ],
-    "collectionAddresses":[]
+    "collectionAddresses":[
+      {"address": "Marinsa, Blvd. Oscar Osorio 1-1, Sonsonate"}
+    ]
   },
   {
     "name": "Usulután",
@@ -358,6 +375,8 @@
       { "name": "Santiago de María" },
       { "name": "Tecapán" }
     ],
-    "collectionAddresses":[]
+    "collectionAddresses":[
+      {"address": "Kool Fashion Store Usulután, 7a Avenida Sur, Usulután"}
+    ]
   }
 ]
