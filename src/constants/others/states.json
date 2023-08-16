@@ -11,6 +11,9 @@
       { "name": "Jujutla" },
       { "name": "San Francisco Menéndez" },
       { "name": "San Lorenzo" }
+    ],
+    "collectionAddresses": [
+      {"address": "Ferreteria el Triunfo, Calle Maria Auxiliadora, Ahuachapan"}
     ]
   },
   {
@@ -25,6 +28,9 @@
       { "name": "San Isidro" },
       { "name": "Tejutepeque" },
       { "name": "Victoria" }
+    ],
+    "collectionAddresses": [
+      {"address": "Mercado Municipal de Sensuntepeque, 2a Av. Norte, Sensuntepeque"}
     ]
   },
   {
@@ -46,6 +52,9 @@
       { "name": "Santa Cruz Michapa" },
       { "name": "Suchitoto" },
       { "name": "Tenancingo" }
+    ],
+    "collectionAddresses": [
+      {"address": "Ciber Davis, 4a Avenida Sur #8, Suchitoto"}
     ]
   },
   {
@@ -85,6 +94,10 @@
       { "name": "Tejutla" },
       { "name": "Valle Nuevo" },
       { "name": "Victoria" }
+    ],
+    "collectionAddresses":[
+      {"address": "Radio Poder, Calle dolores Martel, El, 4ª Avenida, Chalatenango"},
+      {"address": "Ciber Tejutla, 4a Calle Poniente Calle Principal, Tejutla"}
     ]
   },
   {
@@ -110,6 +123,11 @@
       { "name": "Teotepeque" },
       { "name": "Tepecoyo" },
       { "name": "Zaragoza" }
+    ],
+    "collectionAddresses":[
+      {"address": "Centro Comercial Las Cascadas, Avenida Jerusalén y Carretera Panamericana, Oficinas administrativas L221, Nivel 2, contiguo a Anda, Cd Merliot 0157"},
+      {"address": "Metrocentro Lourdes, PJHR+73Q, 7 Calle Ote., Lourdes Colón"},
+      {"address": "Centro Comercial El Encuentro Opico, Hacienda sitio El Niño lote 5, Pol 2, frente a, Carretera Panamericana, San Juan Opico"}
     ]
   },
   {
@@ -138,7 +156,8 @@
       { "name": "Santiago Nonualco" },
       { "name": "Tapalhuaca" },
       { "name": "Zacatecoluca" }
-    ]
+    ],
+    "collectionAddresses":[]
   },
   {
     "name": "La Unión",
@@ -161,7 +180,8 @@
       { "name": "Santa Rosa de Lima" },
       { "name": "Yayantique" },
       { "name": "Yucuaiquín" }
-    ]
+    ],
+    "collectionAddresses":[]
   },
   {
     "name": "Morazán",
@@ -192,7 +212,8 @@
       { "name": "Torola" },
       { "name": "Yamabal" },
       { "name": "Yoloaiquín" }
-    ]
+    ],
+    "collectionAddresses":[]
   },
   {
     "name": "San Miguel",
@@ -217,7 +238,8 @@
       { "name": "San Rafael Oriente" },
       { "name": "Sesori" },
       { "name": "Uluazapa" }
-    ]
+    ],
+    "collectionAddresses":[]
   },
   {
     "name": "San Salvador",
@@ -242,6 +264,11 @@
       { "name": "Santo Tomás" },
       { "name": "Soyapango" },
       { "name": "Tonacatepeque" }
+    ],
+    "collectionAddresses":[
+      {"address": "Metrocentro San Salvador 8va Etapa, C. Los Sisimiles, San Salvador"},
+      {"address": "Bambu City Center Segunda Planta, Bulevar Del Hipodromo, San Salvador"},
+      {"address": "Centro Comercial Galerías Segundo Nivel, P.º Gral. Escalón 3700, San Salvador"}
     ]
   },
   {
@@ -260,7 +287,8 @@
       { "name": "Tecoluca" },
       { "name": "Tepetitán" },
       { "name": "Verapaz" }
-    ]
+    ],
+    "collectionAddresses":[]
   },
   {
     "name": "Santa Ana",
@@ -278,7 +306,8 @@
       { "name": "Santa Rosa Guachipilín" },
       { "name": "Santiago de la Frontera" },
       { "name": "Texistepeque" }
-    ]
+    ],
+    "collectionAddresses":[]
   },
   {
     "name": "Sonsonate",
@@ -299,7 +328,8 @@
       { "name": "Santa Isabel Ishuatán" },
       { "name": "Santo Domingo de Guzmán" },
       { "name": "Sonzacate" }
-    ]
+    ],
+    "collectionAddresses":[]
   },
   {
     "name": "Usulután",
@@ -327,6 +357,7 @@
       { "name": "Santa María" },
       { "name": "Santiago de María" },
       { "name": "Tecapán" }
-    ]
+    ],
+    "collectionAddresses":[]
   }
 ]
