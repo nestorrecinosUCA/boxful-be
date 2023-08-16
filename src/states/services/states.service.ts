@@ -2,7 +2,7 @@ import { BadRequestException, Injectable } from '@nestjs/common';
 import * as fs from 'fs';
 
 import { StateRepository } from '../repositories';
-import { State } from '@States/schemas';
+import { State } from '../schemas';
 
 @Injectable()
 export class StatesService {

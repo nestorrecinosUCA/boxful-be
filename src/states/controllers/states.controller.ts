@@ -1,6 +1,7 @@
 import { Controller, Get } from '@nestjs/common';
-import { StatesService } from '../services/states.service';
 import { ApiOperation, ApiTags } from '@nestjs/swagger';
+
+import { StatesService } from '../services';
 
 @ApiTags('States')
 @Controller('states')

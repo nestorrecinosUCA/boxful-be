@@ -3,7 +3,7 @@ import { HydratedDocument } from 'mongoose';
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 
 import { PackageType } from '../types';
-import { CreatePackageDto } from '@Orders/dto';
+import { CreatePackageDto } from '../dto';
 
 export type OrderDocument = HydratedDocument<Order>;
 
