@@ -1,12 +1,15 @@
 import { Module } from '@nestjs/common';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
+
 import { ConfigModuleOptions } from '@Config/module';
 import { MongoConnection } from '@Config/database';
-import { StatesModule } from './states/states.module';
+import { StatesModule } from '@States/states.module';
+import { OrdersModule } from '@Orders/orders.module';
+
+import { AppController } from './app.controller';
+import { AppService } from './app.service';
 
 @Module({
-  imports: [ConfigModuleOptions, MongoConnection, StatesModule],
+  imports: [ConfigModuleOptions, MongoConnection, StatesModule, OrdersModule],
   controllers: [AppController],
   providers: [AppService],
 })

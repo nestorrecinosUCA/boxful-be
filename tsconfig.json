@@ -13,7 +13,8 @@
     "paths": {
       "@Config/*": ["src/config/*"],
       "@States/*": ["src/states/*"],
-      "@Constants/*": ["src/constants/*"]
+      "@Constants/*": ["src/constants/*"],
+      "@Orders/*": ["src/orders/*"]
     },
     "incremental": true,
     "skipLibCheck": true,
