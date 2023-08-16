@@ -6,6 +6,7 @@ import { StatesModule } from '@States/states.module';
 import { Order, OrderSchema } from './schemas';
 import { OrdersController } from './controllers';
 import { OrdersService } from './services';
+import { OrderRepository } from '@Orders/repositories';
 
 @Module({
   imports: [
@@ -13,6 +14,6 @@ import { OrdersService } from './services';
     MongooseModule.forFeature([{ name: Order.name, schema: OrderSchema }]),
   ],
   controllers: [OrdersController],
-  providers: [OrdersService],
+  providers: [OrderRepository, OrdersService],
 })
 export class OrdersModule {}
