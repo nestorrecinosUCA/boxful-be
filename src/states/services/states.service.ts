@@ -1,15 +1,18 @@
 import { Injectable } from '@nestjs/common';
-import { CreateStateDto } from './dto/create-state.dto';
-import { UpdateStateDto } from './dto/update-state.dto';
+
+import { CreateStateDto } from '../dto/create-state.dto';
+import { UpdateStateDto } from '../dto/update-state.dto';
+import { StateRepository } from '../repositories';
 
 @Injectable()
 export class StatesService {
+  constructor(private readonly stateRepository: StateRepository) { }
   create(createStateDto: CreateStateDto) {
     return 'This action adds a new state';
   }
 
-  findAll() {
-    return `This action returns all states`;
+  async findAll() {
+    return await this.stateRepository.findAll();
   }
 
   findOne(id: number) {

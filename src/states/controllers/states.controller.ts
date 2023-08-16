@@ -1,11 +1,11 @@
 import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/common';
-import { StatesService } from './states.service';
-import { CreateStateDto } from './dto/create-state.dto';
-import { UpdateStateDto } from './dto/update-state.dto';
+import { StatesService } from '../services/states.service';
+import { CreateStateDto } from '../dto/create-state.dto';
+import { UpdateStateDto } from '../dto/update-state.dto';
 
 @Controller('states')
 export class StatesController {
-  constructor(private readonly statesService: StatesService) {}
+  constructor(private readonly statesService: StatesService) { }
 
   @Post()
   create(@Body() createStateDto: CreateStateDto) {
@@ -13,8 +13,13 @@ export class StatesController {
   }
 
   @Get()
-  findAll() {
-    return this.statesService.findAll();
+  async findAll() {
+    return await this.statesService.findAll();
+  }
+
+  @Get()
+  async poblate() {
+    return;
   }
 
   @Get(':id')
