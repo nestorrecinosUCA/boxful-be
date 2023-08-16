@@ -7,6 +7,7 @@ import * as fs from 'fs';
 
 import { StateRepository } from '../repositories';
 import { State } from '../schemas';
+import { CollectionPoint } from '../types';
 
 @Injectable()
 export class StatesService {
@@ -22,6 +23,14 @@ export class StatesService {
       throw new NotFoundException(`State ${name} does not exist`);
     }
     return state;
+  }
+
+  async findCollectionPoints(): Promise<CollectionPoint[]> {
+    const states = await this.findAll();
+    const collectionPoints = states
+      .map((state) => state.collectionAddresses)
+      .flat();
+    return collectionPoints;
   }
 
   async poblate(): Promise<string> {
