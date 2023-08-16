@@ -1,6 +1,8 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { HydratedDocument } from 'mongoose';
 
+import { City } from '../types';
+
 export type StateDocument = HydratedDocument<State>;
 @Schema()
 export class State {
@@ -8,7 +10,7 @@ export class State {
   name: string;
 
   @Prop()
-  cities: string[];
+  cities: City[];
 }
 
 export const StateSchema = SchemaFactory.createForClass(State);
