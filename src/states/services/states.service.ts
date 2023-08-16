@@ -1,4 +1,4 @@
-import { BadRequestException, Injectable } from '@nestjs/common';
+import { BadRequestException, Injectable, NotFoundException } from '@nestjs/common';
 import * as fs from 'fs';
 
 import { StateRepository } from '../repositories';
@@ -10,6 +10,14 @@ export class StatesService {
 
   async findAll(): Promise<State[]> {
     return await this.stateRepository.findAll();
+  }
+
+  async findOneByName(name: string): Promise<State> {
+    const state = await this.stateRepository.findOneByName(name);
+    if (!state) {
+      throw new NotFoundException(`State ${name} does not exist`);
+    }
+    return state;
   }
 
   async poblate(): Promise<string> {

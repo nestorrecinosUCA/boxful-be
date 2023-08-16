@@ -10,6 +10,10 @@ export class StateRepository {
     return await this.stateModel.find().exec();
   }
 
+  async findOneByName(name: string): Promise<State> {
+    return await this.stateModel.findOne({ name }).exec();
+  }
+
   async save(state: State) {
     const createState = this.stateModel.create(state);
     const savedState = (await createState).save();

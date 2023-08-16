@@ -12,5 +12,6 @@ import { StatesController } from './controllers';
   ],
   controllers: [StatesController],
   providers: [StateRepository, StatesService],
+  exports: [StatesService],
 })
 export class StatesModule {}
