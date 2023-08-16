@@ -30,14 +30,12 @@ services:
   mongodb:
     image : mongo:latest
     container_name: boxful_db
-    volumes:
-      - mongodb_volume:/data/db
     ports:
       - "${DB_PORT}:${DB_PORT}"
     environment:
-      - MONGO_USERNAME=${DB_USERNAME}
-      - MONGO_PASSWORD=${DB_PASSWORD}
-      - MONGO_DATABASE=${DB_DATABASE}
+      - MONGO_INITDB_ROOT_USERNAME=${MONGO_INITDB_ROOT_USERNAME}
+      - MONGO_INITDB_ROOT_PASSWORD=${MONGO_INITDB_ROOT_PASSWORD}
+      - MONGO_INITDB_DATABASE=${DB_DATABASE}
     networks:
       - boxful-network
     restart: always
