@@ -1,16 +1,11 @@
 import { ConflictException, Injectable } from '@nestjs/common';
 import * as fs from 'fs';
 
-import { CreateStateDto } from '../dto/create-state.dto';
-import { UpdateStateDto } from '../dto/update-state.dto';
 import { StateRepository } from '../repositories';
 
 @Injectable()
 export class StatesService {
-  constructor(private readonly stateRepository: StateRepository) { }
-  create(createStateDto: CreateStateDto) {
-    return 'This action adds a new state';
-  }
+  constructor(private readonly stateRepository: StateRepository) {}
 
   async findAll() {
     return await this.stateRepository.findAll();
@@ -29,17 +24,5 @@ export class StatesService {
     } catch (error) {
       throw new ConflictException('Ups, something happened!');
     }
-  }
-
-  async findOne(id: string) {
-    return `This action returns a #${id} state`;
-  }
-
-  update(id: number, updateStateDto: UpdateStateDto) {
-    return `This action updates a #${id} state`;
-  }
-
-  remove(id: number) {
-    return `This action removes a #${id} state`;
   }
 }
