@@ -154,8 +154,8 @@
       { "name": "San Rafael Obrajuelo" },
       { "name": "Santa María Ostuma" },
       { "name": "Santiago Nonualco" },
-      { "name": "Tapalhuaca" },
-      { "name": "Zacatecoluca" }
+{ "name": "Tapalhuaca" }
+
     ],
     "collectionAddresses":[
       {"address": "Centro comercial San Antonio, Zacatecoluca, La Paz"}
