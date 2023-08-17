@@ -24,7 +24,7 @@ export class CreateOrderDto {
 
   @IsString()
   @ApiProperty()
-  userAddres: string;
+  userAddress: string;
 
   @IsString()
   @ApiProperty()

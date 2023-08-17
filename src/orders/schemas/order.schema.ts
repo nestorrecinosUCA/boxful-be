@@ -31,7 +31,7 @@ export class Order {
 
   @ApiProperty({ type: 'string' })
   @Prop()
-  userAddres: string;
+  userAddress: string;
 
   @ApiProperty({ type: 'string' })
   @Prop()
