@@ -49,6 +49,10 @@ export class Order {
   @Prop()
   indications: string;
 
+  @ApiProperty({ type: 'string' })
+  @Prop()
+  phone: string;
+
   @ApiProperty({ type: [CreatePackageDto] })
   @Prop()
   packages: PackageType[];

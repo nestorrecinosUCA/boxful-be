@@ -42,6 +42,10 @@ export class CreateOrderDto {
   @ApiProperty()
   indications: string;
 
+  @IsString()
+  @ApiProperty()
+  phone: string;
+
   @ApiProperty()
   packages: CreatePackageDto[];
 }
