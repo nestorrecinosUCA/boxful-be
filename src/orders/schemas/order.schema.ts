@@ -11,7 +11,7 @@ export type OrderDocument = HydratedDocument<Order>;
 export class Order {
   @ApiProperty({ type: 'string' })
   @Prop()
-  collectingAddres: string;
+  collectingAddress: string;
 
   @ApiProperty({ type: Date })
   @Prop({ type: Date })

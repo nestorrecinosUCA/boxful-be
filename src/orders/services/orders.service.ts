@@ -13,7 +13,7 @@ export class OrdersService {
     private readonly orderRepository: OrderRepository,
   ) {}
   async create(createOrderDto: CreateOrderDto): Promise<string> {
-    const { state, city, collectingAddres } = createOrderDto;
+    const { state, city, collectingAddress } = createOrderDto;
     const existingState = await this.stateService.findOneByName(state);
     const { cities } = existingState;
     const existingCity = cities.find(
@@ -27,11 +27,11 @@ export class OrdersService {
     const collectionPoints = await this.stateService.findCollectionPoints();
     const existingCollectionPoints = collectionPoints.find(
       (collectingPoint: CollectionPoint) =>
-        collectingPoint.address === collectingAddres,
+        collectingPoint.address === collectingAddress,
     );
     if (!existingCollectionPoints) {
       throw new NotFoundException(
-        `The collecting address ${collectingAddres} was not found`,
+        `The collecting address ${collectingAddress} was not found`,
       );
     }
     const savedOrder = await this.orderRepository.save(createOrderDto);
