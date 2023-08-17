@@ -5,7 +5,7 @@ import { IsEmail, IsString } from 'class-validator';
 export class CreateOrderDto {
   @IsString()
   @ApiProperty()
-  collectingAddres: string;
+  collectingAddress: string;
 
   @ApiProperty()
   date: Date;
