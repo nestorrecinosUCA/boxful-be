@@ -4,7 +4,8 @@
 
 ## Description
 
-This API allows to save an order depending on the user information, collecting address, state, city and some other details.
+This API allows to save an order depending on the user information, collecting address, state, city and some other details, you can find the Swagger documentation in the url `{uri}:{port}/docs`
+
 
 ## Tech Stack
 
@@ -13,7 +14,7 @@ This API allows to save an order depending on the user information, collecting a
 - MongoDB
 - Mongoose
 - Docker
-
+- Swagger
 
 ## Installation
 
